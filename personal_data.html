@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cybersecurity Malaysia</title>
-    <link rel="stylesheet" href="/styles/dashboard.css" />
+    <link rel="stylesheet" href="/styles/personal_data.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-        <!-- SIDEBAR -->
+      <!-- SIDEBAR -->
       <aside>
         <div class="top">
           <a href="index.html"
@@ -22,9 +22,9 @@
           </div>
         </div>
         <p>Hello, Adam!</p>
-        <hr>
+        <hr />
         <div class="sidebar">
-          <a href="dashboard.html" class="active"
+          <a href="dashboard.html" 
             ><span class="material-symbols-outlined"> dashboard </span>
             <h3>Dashboard</h3></a
           >
@@ -32,7 +32,7 @@
             ><span class="material-symbols-outlined"> description </span>
             <h3>Data Upload</h3></a
           >
-          <a href="settings.html"
+          <a href="settings.html" class="active"
             ><span class="material-symbols-outlined"> settings </span>
             <h3>Settings</h3></a
           >
@@ -46,9 +46,7 @@
       <div class="main">
         <div class="top">
           <button id="menu-btn">
-            <span class="material-symbols-outlined">
-              menu
-              </span>
+            <span class="material-symbols-outlined"> menu </span>
           </button>
           <a href="index.html"
             ><img src="./assets/logo_csm.png" alt="Cybersecurity Malaysia"
@@ -56,13 +54,37 @@
         </div>
 
         <div class="content-box">
-          <h1>Dashboard</h1>
-          <hr>
-
+          <h1>Manage your account</h1>
+          <hr />
+        <!-- CONTENT -->
+          <div class="settings-box">
+            <h2>Change your account settings</h2>
+            <div class="settings-content">
+              <div class="mini-sidebar">
+                <a href="settings.html" > <h3>Profile</h3></a>
+                <a href="password.html" > <h3>Password</h3></a>
+                <a href="personal_data.html" class="active"> <h3>Personal Data</h3></a>
+              </div>
+              <!-- PERSONAL DATA BOX -->
+              <div class="personaldata-box">
+                  <h3>Personal Data</h3>
+                  <p>Your account contains personal data that you have given us.
+                    This page allows you to download or delete that data.</p>
+                  <p><b>
+                      Deleting this data will permanently remove your account,
+                        and this cannot be recovered.
+                  </b></p>
+                  <div class="button-container">
+                      <button class="primary-button">Download</button>
+                      <button class="secondary-button">Delete</button>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script src="/scripts/sidebar.js"></script>
+      <script src="/scripts/sidebar.js"></script>
+    </div>
   </body>
 </html>

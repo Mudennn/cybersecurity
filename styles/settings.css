@@ -66,6 +66,29 @@ a:hover {
     transition: 0.5s;
 }
 
+/* PRIMARY BUTTON STYLE */
+.primary-button{
+    color: white;
+    background-color: var(--main-color);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    width: 154px;
+    height: 48px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+}
+
+.primary-button:hover{
+    background-color: white;
+    color: var(--main-color);
+    transition: 0.5s;
+    border: 1px solid var(--main-color);  
+}
+
+
 /* CONTAINER */
 .container {
     display: grid;
@@ -194,6 +217,97 @@ aside .sidebar a:hover span {
     margin-bottom: 16px;
 }
 
+/* SETTTING BOX */ 
+.settings-box h2{
+    font-size: 18px;
+    margin: 24px 0;
+}
+
+.settings-content {
+    display: flex; 
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+}
+
+.mini-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+
+.mini-sidebar a {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding-left: 12px;
+    transition:  all 300ms ease;
+}
+
+.mini-sidebar h3 {
+    transition:  all 300ms ease;
+}
+
+.mini-sidebar a.active {
+    background: var(--secondary-color);
+}
+
+.mini-sidebar a.active h3{
+    color: var(--main-color);
+}
+
+ .mini-sidebar , a:hover h3{
+    color: var(--main-color);
+}
+
+ .mini-sidebar a:hover h3 {
+    margin-left: 1rem;
+}
+
+
+/* PROFILE FORM */
+.form-box {
+    width: 300px;
+}
+.form-box p {
+    color: black;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.input-box label {
+    font-size: 14px;
+}
+
+.input-box input {
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 20px 0 20px;
+}
+
+.input-box input::placeholder {
+    color: #808080;
+}
+
+.form-box form button {
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+
 @media screen and (max-width: 767px) {
     .container{
         width: 100%;
@@ -239,5 +353,38 @@ aside .sidebar a:hover span {
         display: block;
     }
 
+    .content-box h1 {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
     /* CONTENT BOX */
+    .settings-content {
+        flex-direction: column;
+    }
+
+    /* MINISIDE BAR */
+    .mini-sidebar{
+        flex-direction: row;
+        border-right: none;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 0;
+        padding-bottom: 12px;
+        border-bottom: 2px solid black;
+    }
+
+    
+    .mini-sidebar a {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .mini-sidebar a:hover h3 {
+        margin-left: 0;
+    }
+
+    .form-box {
+        width: 100%;
+    }
 }
