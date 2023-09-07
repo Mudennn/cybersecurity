@@ -438,6 +438,9 @@ section .details span {
     .download-box {
         margin-bottom: 24px;
     }
+    .download-box p {
+        margin-bottom: 8px;
+    }
     .download-box button {
         width: 100%;
     }
