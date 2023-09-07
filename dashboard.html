@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-        <!-- SIDEBAR -->
+      <!-- SIDEBAR -->
       <aside>
         <div class="top">
           <a href="index.html"
@@ -22,7 +22,7 @@
           </div>
         </div>
         <p>Hello, Adam!</p>
-        <hr>
+        <hr />
         <div class="sidebar">
           <a href="dashboard.html" class="active"
             ><span class="material-symbols-outlined"> dashboard </span>
@@ -42,13 +42,11 @@
           >
         </div>
       </aside>
-
+      <!-- MOBILE TOGGLE MENU -->
       <div class="main">
         <div class="top">
           <button id="menu-btn">
-            <span class="material-symbols-outlined">
-              menu
-              </span>
+            <span class="material-symbols-outlined"> menu </span>
           </button>
           <a href="index.html"
             ><img src="./assets/logo_csm.png" alt="Cybersecurity Malaysia"
@@ -57,12 +55,97 @@
 
         <div class="content-box">
           <h1>Dashboard</h1>
-          <hr>
+          <hr />
+          <!-- TABLE -->
+          <div class="table">
+            <section class="table-body">
+              <h3>Table</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>BRN</th>
+                    <th>Company</th>
+                    <th>Tier</th>
+                    <th>Overall</th>
+                    <th>VAPT Score</th>
+                    <th>VAPT Statuses</th>
+                    <th>CMERP Score</th>
+                    <th>CMERP Statuses</th>
+                    <th>ISGRIC Score</th>
+                    <th>ISGRIC Statuses</th>
+                    <th>Training Score</th>
+                    <th>Training Statuses</th>
+                    <th>Awareness Score</th>
+                    <th>Awareness Statuses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>423456-G</td>
+                    <td>Sdn. Bhd.</td>
+                    <td>Tier 1</td>
+                    <td>In-progress</td>
+                    <td>1.00</td>
+                    <td>Started</td>
+                    <td>1.00</td>
+                    <td>Completed</td>
+                    <td>2.50</td>
+                    <td>Started</td>
+                    <td>1.00</td>
+                    <td>In-progress</td>
+                    <td>1.00</td>
+                    <td>In-progress</td>
+                  </tr>
+                  <tr>
+                    <td>423456-G</td>
+                    <td>Sdn. Bhd.</td>
+                    <td>Tier 1</td>
+                    <td>In-progress</td>
+                    <td>1.00</td>
+                    <td>Started</td>
+                    <td>1.00</td>
+                    <td>Completed</td>
+                    <td>2.50</td>
+                    <td>Started</td>
+                    <td>1.00</td>
+                    <td>In-progress</td>
+                    <td>1.00</td>
+                    <td>In-progress</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
 
+          <!-- CHART -->
+          <div class="chart-container">
+            <div class="chart-box">
+              <p>VAPT Statuses</p>
+              <canvas id="vapt-chart"></canvas>
+            </div>
+            <div class="chart-box">
+              <p>CMERP Statuses</p>
+              <canvas id="cmerp-chart"></canvas>
+            </div>
+            <div class="chart-box">
+              <p>ISGRIC Statuses</p>
+              <canvas id="isgric-chart"></canvas>
+            </div>
+            <div class="chart-box">
+              <p>TRAINING Statuses</p>
+              <canvas id="training-chart"></canvas>
+            </div>
+            <div class="chart-box">
+              <p>AWARENESS Statuses</p>
+              <canvas id="awareness-chart"></canvas>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="/scripts/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/scripts/pie_chart.js"></script>
   </body>
 </html>
