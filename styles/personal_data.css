@@ -362,6 +362,7 @@ aside .sidebar a:hover span {
     /* CONTENT BOX */
     .settings-content {
         flex-direction: column;
+        margin-bottom: 1.5rem;
     }
 
     /* MINISIDE BAR */

@@ -102,7 +102,7 @@ a:hover {
 }
 
 aside {
-    height: 100vh;
+    height: 100%;
     background: white;
     padding: 0 12px;
     display: block;
@@ -112,7 +112,7 @@ aside {
 aside .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 1.4rem;
 }
 
@@ -129,13 +129,14 @@ aside p {
     font-weight: 600;
     font-size: 16px;
     color: black;
+     text-align: center;
 }
 
 /* SIDEBAR */
 aside .sidebar {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
     position: relative;
     top: 2rem;
 }
@@ -160,11 +161,12 @@ aside .sidebar a span {
     transition: all 300ms ease;
 }
 
-/* aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-} */
+aside .sidebar a:last-child{
+    width: 100%;
+    background: #F7F8F9;
+    margin: 2rem 0;
+    padding: 0 20px 0 35px;
+}
 
 aside .sidebar a.active {
     background: var(--secondary-color);
@@ -372,7 +374,6 @@ section .details span {
         left: -100%;
         z-index: 3;
         height: 100vh;
-        /* box-shadow: 1rem 3rem 4rem var(--text); */
         display: none;
         animation: showMenu 400ms ease forwards;
         width: 300px;
@@ -382,6 +383,10 @@ section .details span {
         to {
             left: 0;
         }
+    }
+
+    aside .top {
+        justify-content: space-between;
     }
 
     aside .close {
