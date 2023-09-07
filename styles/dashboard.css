@@ -203,7 +203,7 @@ table {
     width: 100%;
 }
 table, th, td {
-    padding: 1rem;
+    padding: 1rem 4px;
     border-collapse: collapse;
     text-align: left;
     font-size: 12px;
@@ -211,14 +211,14 @@ table, th, td {
 }
 
 th {
-    max-width: 110px;
+    max-width: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 td {
-    min-width: 6.5rem;
+    min-width: 3.5rem;
 }
 
 
@@ -289,6 +289,7 @@ tbody tr:nth-child(even){
 }
 
 
+
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 767px) {
     .container{
@@ -344,7 +345,7 @@ tbody tr:nth-child(even){
 
     /* TABLE */
     td {
-        min-width: 7rem;
+        min-width: 5rem;
     }
 
     .table{
@@ -356,4 +357,81 @@ tbody tr:nth-child(even){
     .chart-box {
         width: 99%;
     }
+}
+
+/* TABLET AND IPAD QUERY */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+        position: fixed;
+        left: -100%;
+        z-index: 3;
+        height: 100vh;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+        width: 300px;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+    aside .top {
+        justify-content: space-between;
+    }
+
+    aside .close {
+        display: block;
+    }
+
+    .main{
+        padding: 0 20px;
+    }
+    .main .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main .top img {
+        display: block;
+        width: 200px;
+    }
+
+    .main .top button {
+        display: block;
+    }
+
+    .content-box h1 {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+    /* TABLE */
+    .table{
+        width: 93vw;
+        padding: 1rem 1.2rem;
+    }
+
+    .chart-box p {
+        font-size: 14px;
+    }
+}
+
+ /* Media Query for Large screens */
+ @media (min-width: 1281px) {
+    /* TABLE */
+    .table{
+        width: 81vw;
+    }
+
+    td {
+        min-width: 5.5rem;
+    }
+    
 }

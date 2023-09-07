@@ -19,7 +19,7 @@ body {
 
 :root {
     --main-color: #f19322;
-    --secondary-color: #ffded5;
+    --secondary-color: rgba(241, 147, 34, 0.1);
     --text: #475569;
 }
 
@@ -288,6 +288,43 @@ footer img {
     }
 
     .copyright-box{
+        padding: 0px 20px;
+    }
+}
+
+/* TABLET AND IPAD QUERY */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+      }
+    
+      h2 {
+        font-size: 21px;
+      }
+    
+      p {
+        font-size: 11px;
+      }
+      /* NAVBAR  */
+      nav {
+        padding: 20px;
+      }
+      nav img {
+        width: 200px;
+      }
+
+      /* HERO */
+    .text-box{
+        width: 90%;
+        padding: 32px 12px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 32px 0 16px 0;
+    }
+    .copyright-box{
+        margin-top: 0;
         padding: 0px 20px;
     }
 }

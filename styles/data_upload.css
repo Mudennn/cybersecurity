@@ -308,7 +308,7 @@ section .details span {
  .progress-bar .progress {
     height: 100%;
     width: 50%;
-    background: black;
+    background: #f0d8bc;
     border-radius: inherit;
 }
 
@@ -349,6 +349,9 @@ section .details span {
 }
 
 /* DOWNLOAD TEMPLATE FILE */
+.download-box {
+    margin-bottom: 24px;
+}
 .download-box p {
     margin-top: 32px;
     color: black;
@@ -356,7 +359,7 @@ section .details span {
 
 .download-box button {
     width: 300px;
-    margin: 8px 0;
+    margin: 4px 0;
 }
 
 
@@ -438,4 +441,70 @@ section .details span {
     .download-box button {
         width: 100%;
     }
+}
+
+/* TABLET AND IPAD QUERY */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+        position: fixed;
+        left: -100%;
+        z-index: 3;
+        height: 100vh;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+        width: 300px;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+    aside .top {
+        justify-content: space-between;
+    }
+
+    aside .close {
+        display: block;
+    }
+
+    .main{
+        padding: 0 20px;
+    }
+    .main .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main .top img {
+        display: block;
+        width: 200px;
+    }
+
+    .main .top button {
+        display: block;
+    }
+
+    .content-box h1 {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+    /* UPLOAD BOX */
+    .upload-box {
+        width: 100%;
+    }
+    .upload-box .details-box{
+        width: 49%;
+    }
+    .upload-box .score-box{
+        width: 49%;
+    }
+
 }
