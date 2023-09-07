@@ -344,12 +344,12 @@ tbody tr:nth-child(even){
     }
 
     .table{
-        width: 90vw;
+        width: 88vw;
         padding: 1rem 1.2rem;
     }
 
     /* CHART BOX */
     .chart-box {
-        width: 100%;
+        width: 99%;
     }
 }
