@@ -354,6 +354,6 @@ tbody tr:nth-child(even){
 
     /* CHART BOX */
     .chart-box {
-        width: 99.9%;
+        width: 99%;
     }
 }
