@@ -410,11 +410,12 @@ footer img {
 .contactus-box p {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 .contactus-box p span {
   font-size: 20px;
   color: var(--text);
+  overflow-y: hidden;
 }
 .pages-box {
   display: flex;
@@ -493,10 +494,12 @@ footer img {
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
+    overflow-y: hidden;
   }
 
   .open-btn {
     color: var(--main-color);
+
   }
 
   .close-btn {
@@ -647,6 +650,7 @@ footer img {
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
+    overflow-y: hidden;
   }
   .open-btn{
     color: var(--main-color);

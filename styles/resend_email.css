@@ -216,10 +216,12 @@ footer img {
 .contactus-box p {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 .contactus-box p span {
     font-size: 20px;
     color: var(--text);
+    overflow-y: hidden;
   }
 .pages-box{
     display: flex;
