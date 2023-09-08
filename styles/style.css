@@ -410,9 +410,10 @@ footer img {
 .contactus-box p {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
-.contactus-box p .fa {
-  width: 20px;
+.contactus-box p span {
+  font-size: 20px;
   color: var(--text);
 }
 .pages-box {

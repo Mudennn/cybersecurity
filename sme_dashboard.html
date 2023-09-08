@@ -1,0 +1,233 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity Malaysia</title>
+    <link rel="stylesheet" href="/styles/sme_dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="top">
+          <a href="index.html"
+            ><img src="./assets/logo_csm.png" alt="Cybersecurity Malaysia"
+          /></a>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+        </div>
+        <p>Hello, Adam!</p>
+        <hr />
+        <div class="sidebar">
+          <a href="dashboard.html"
+            ><span class="material-symbols-outlined"> dashboard </span>
+            <h3>Dashboard</h3></a
+          >
+          <a href="data_upload.html"
+            ><span class="material-symbols-outlined"> description </span>
+            <h3>Data Upload</h3></a
+          >
+          <a href="settings.html"
+            ><span class="material-symbols-outlined"> settings </span>
+            <h3>Settings</h3></a
+          >
+          <a href="sme_dashboard.html" class="active"
+            ><span class="material-symbols-outlined"> dashboard </span>
+            <h3>SME Dashboard</h3></a
+          >
+          <a href="http://"
+            ><span class="material-symbols-outlined"> logout </span>
+            <h3>Logout</h3></a
+          >
+        </div>
+      </aside>
+      <!-- MOBILE TOGGLE MENU -->
+      <div class="main">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <a href="index.html"
+            ><img src="./assets/logo_csm.png" alt="Cybersecurity Malaysia"
+          /></a>
+        </div>
+
+        <div class="content-box">
+          <h1>SME Dashboard</h1>
+          <hr />
+          <!-- OVERALL SCORING -->
+          <div class="scoring-box">
+            <h3>Overall Scoring</h3>
+            <div class="rating-grade-box">
+              <p class="rating">GOOD</p>
+              <p class="grade">GRADE A</p>
+            </div>
+            <div class="star">
+              <span class="material-symbols-outlined"> grade </span>
+              <span class="material-symbols-outlined"> grade </span>
+              <span class="material-symbols-outlined"> grade </span>
+              <span class="material-symbols-outlined"> grade </span>
+              <span class="material-symbols-outlined"> grade </span>
+            </div>
+          </div>
+
+          <!-- TAB REPORT -->
+          <div class="tab-container">
+            <div class="tab-report-box">
+              <button class="tab-btn active">VAPT</button>
+              <button class="tab-btn">CMERP</button>
+              <button class="tab-btn">ISGRIC</button>
+              <button class="tab-btn">Training</button>
+              <button class="tab-btn">Awareness</button>
+              <button class="tab-btn">Check</button>
+              <div class="line"></div>
+            </div>
+
+            <div class="tab-content-box">
+
+              <div class="content active">
+                <div class="data-box">
+                  <div class="report-box">
+                    <h3>VAPT Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                  </div>
+                  <div class="report-box">
+                    <h3>VAPT Status</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                  </div>
+                  <div class="report-box">
+                    <h3>VAPT Report</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                  </div>
+                  <div class="report-box">
+                    <h3>VAPT Score</h3>
+                    <p>1.50</p>
+                  </div>
+                </div>
+              </div>
+            
+                <div class="content">
+                  <div class="data-box">
+                    <div class="report-box">
+                      <h3>CMERP Description</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>CMERP Status</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>CMERP Report</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>CMERP Score</h3>
+                      <p>1.50</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <div class="data-box">
+                    <div class="report-box">
+                      <h3>ISGRIC Description</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>ISGRIC Status</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>ISGRIC Report</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>ISGRIC Score</h3>
+                      <p>1.50</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="content">
+                  <div class="data-box">
+                    <div class="report-box">
+                      <h3>Training Description</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Training Status</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Training Report</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Training Score</h3>
+                      <p>1.50</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <div class="data-box">
+                    <div class="report-box">
+                      <h3>Awareness Description</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Awareness Status</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Awareness Report</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
+                    </div>
+                    <div class="report-box">
+                      <h3>Awareness Score</h3>
+                      <p>1.50</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <div class="score-content-box">
+                    <div class="score-box">
+                      <h3>VAPT Score</h3>
+                      <p>1.50</p>
+                      <h3>CMERP Score</h3>
+                      <p>1.50</p>
+                      <h3>ISGRIC Score</h3>
+                      <p>1.50</p>
+                      <h3>Training Score</h3>
+                      <p>1.50</p>
+                      <h3>Awareness Score</h3>
+                      <p>1.50</p>
+                    </div>
+                    <div class="score-box">
+                      <h3>Group 1</h3>
+                      <p>0.58</p>
+                      <h3>Group B</h3>
+                      <p>0.00</p>
+                      <h3>Total</h3>
+                      <p class="total">5.83</p>
+                    </div>
+                  </div>
+                </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/tab_dashboard.js"></script>
+  </body>
+</html>

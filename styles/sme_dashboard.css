@@ -222,148 +222,166 @@ aside .sidebar a:hover span {
     margin-bottom: 16px;
 }
 
-.download-box{
-    display: flex;
-    flex-direction: column;
-}
 
-/* UPLOAD FILE */
-.upload-box {
+/* SOCRING BOX */
+.scoring-box {
     margin-top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 70%;
+    background: white;
+    width: max-content;
+    padding: 16px 12px;
+    border-radius: 0.5rem;
 }
 
-.upload-box .details-box {
-    width: 49%;
-}
-.upload-box .score-box {
-    width: 49%;
-}
-
-.upload-box h2{
+.scoring-box h3 {
     font-size: 18px;
+    margin-bottom: 16px;
 }
 
-.upload-box form {
-    height: 167px;
-    border: 2px dashed var(--text);
-    border-radius: 5px;
+.rating-grade-box {
     display: flex;
+    gap: 8px;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 4px;
-    margin: 16px 0;
+}
+
+.rating-grade-box .rating {
+    font-weight: 500;
+    background: var(--main-color);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 8px 24px;
+}
+
+.rating-grade-box .grade {
+    border: 2px solid var(--main-color);
+    color: black;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 8px 24px;
+}
+
+.star {
+    margin-top: 16px;
+}
+
+
+/* TAB REPORT */
+.tab-container {
+    margin-top: 16px;
+    margin-bottom: 24px ;
+    width: 100%;
+    background: white;
+    padding: 24px 12px;
+}
+
+.tab-report-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.tab-report-box .tab-btn {
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    padding: 18px;
     cursor: pointer;
 }
 
-form :where(span, p) {
-    color: black;
+.tab-report-box .tab-btn.active{
+    color: var(--main-color);
 }
 
-section .row {
-    background: var(--main-color);
+.line {
+    position: absolute;
+    top: 53px;
+    left:32px;
+    width: 77px;
+    height: 5px;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.tab-content-box {
+    padding: 20px;
+}
+
+.tab-content-box .content{
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.tab-content-box .content.active{
+    display: block;
+}
+.report-box h3 {
     margin-bottom: 8px;
-    list-style: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+}
+
+/* CONTENT BOX */
+.content .data-box {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-section .row span {
-    color: white;
+.data-box .report-box{
+    width: 48%;
 }
 
-
-section .details span {
-    font-size: 14px;
-    color: black;
-}
-
-.progress-area .row .content {
-    width: 100%;
-    margin-left: 15px;
-}
-
-.progress-area .details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
-}
-
-.progress-area .progress-bar {
-    height: 6px;
-    width: 100%;
-    background: white;
-    margin-bottom: 4px;
-    border-radius: 30px;
-}
- .progress-bar .progress {
-    height: 100%;
-    width: 50%;
-    background: #f0d8bc;
-    border-radius: inherit;
-}
-
-.uploaded-area {
-    max-height: 150px;
-    overflow-y: scroll;
-}
-
-.uploaded-area .row{
-    background: white;
+.report-box:nth-child(4){
     border: 2px solid var(--main-color);
-}
-
-.uploaded-area .row span{
-    color: var(--main-color);
-}
-.uploaded-area .row .details .name{
-    color: black;
-}
-
-.uploaded-area::-webkit-scrollbar {
-    width: 0px;
-}
-.uploaded-area .row .content {
+    padding: 12px;
+    border-radius: 0.5rem;
     display: flex;
-    align-items: center;
-}
-
-.uploaded-area .row .details {
-    display: flex;
-    margin-left: 15px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.uploaded-area .details .size {
-    font-size: 11px;
-    color: var(--main-color);
-}
-
-/* DOWNLOAD TEMPLATE FILE */
-.download-box {
-    margin-bottom: 24px;
-}
-.download-box p {
-    margin-top: 32px;
+.report-box:nth-child(4) p{
+    font-size: 28px;
     color: black;
+    font-weight: 600;
 }
 
-.download-box button {
-    width: 300px;
-    margin: 4px 0;
+/* CHECK BOX */
+.score-content-box{
+    display: flex;
+    gap: 20px;
 }
 
+.score-content-box .score-box {
+    width: 33%;
+    border: 2px solid var(--main-color);
+    border-radius: 0.5rem;
+    padding: 12px;
+}
 
+.score-box p {
+    margin-bottom: 16px;
+}
 
+.score-box .total {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
 
 /* MOBILE SCREEN */
 @media screen and (max-width: 767px) {
@@ -419,29 +437,32 @@ section .details span {
         margin-top: 24px;
     }
 
-    /* UPLOAD BOX */
-    .upload-box {
+    /* SCORING BOX */
+    .scoring-box {
         width: 100%;
     }
-    .upload-box .details-box{
-        width: 100%;
+    
+    /* TAB REPORT */
+    .tab-report-box{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-    .upload-box .score-box{
+
+    /* CONTENT BOX */
+    .data-box .report-box {
         width: 100%;
     }
 
-    .score-box h2 {
-        margin-top: 32px;
+    .line{
+        display: none;
     }
 
-    /* DOWNLOAD BOX */
-    .download-box {
-        margin-bottom: 24px;
+    /* CHECK BOX */
+    .score-content-box {
+        flex-wrap: wrap;
     }
-    .download-box p {
-        margin-bottom: 8px;
-    }
-    .download-box button {
+    .score-content-box .score-box{
         width: 100%;
     }
 }
@@ -499,16 +520,10 @@ section .details span {
         margin-top: 24px;
     }
 
-    /* UPLOAD BOX */
-    .upload-box {
-        width: 100%;
+    .line{
+        left: 12px;
     }
-    .upload-box .details-box{
-        width: 49%;
-    }
-    .upload-box .score-box{
-        width: 49%;
-    }
+    
 
 }
 
@@ -517,5 +532,9 @@ section .details span {
     aside {
         height: 100vh;
     }
+    
+   .line {
+    left: 86px;
+   }
     
 }

@@ -216,10 +216,10 @@ footer img {
     display: flex;
     align-items: center;
 }
-.contactus-box p .fa{
-    width: 20px;
+.contactus-box p span {
+    font-size: 20px;
     color: var(--text);
-}
+  }
 .pages-box{
     display: flex;
     flex-direction: column;

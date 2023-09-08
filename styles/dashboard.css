@@ -423,7 +423,7 @@ tbody tr:nth-child(even){
     }
 }
 
- /* Media Query for Large screens */
+ /* LARGE SCREEN QUERY*/
  @media (min-width: 1281px) {
     /* TABLE */
     .table{
